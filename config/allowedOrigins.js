@@ -1,5 +1,6 @@
-const allowedOrigins = [
-    'https://blog-api-fz11.onrender.com'
-] 
+// const allowedOrigins = [
+//     'https://blog-api-fz11.onrender.com'
+// ] 
 
-module.exports = allowedOrigins
+// module.exports = allowedOrigins
+// changes
