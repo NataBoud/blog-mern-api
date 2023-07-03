@@ -22,7 +22,9 @@ const DB_PASSWORD = process.env.DB_PASSWORD
 const DB_NAME = process.env.DB_NAME
 
 // Middleware // Промежуточный
-app.use(cors())
+app.use(cors({
+    origin: ['http://localhost:3002', 'https://blog-api-fz11.onrender.com']
+}))
 app.use(fileUpload()) // также express нужно дать понять где будут храниться статическ файлы, как правильго ему прописывать все пути:
 app.use(express.json())
 app.use(express.static('uploads')) // загружаем в заранее созданную папку uploads 
